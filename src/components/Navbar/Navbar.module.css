@@ -1,0 +1,90 @@
+.main {
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	width: 100vw;
+	padding: 2rem;
+	justify-content: space-between;
+	align-items: center;
+	/* From https://css.glass */
+	background: rgba(10, 10, 10, 0.6);
+	box-shadow: 0 4px 30px rgba(63, 56, 56, 0.4);
+	backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.mid {
+	flex: 1;
+	font-size: 1.3rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	font-weight: bold;
+	align-items: center;
+	justify-content: center;
+}
+.navItem {
+	text-decoration: none;
+	color: #ffff;
+	margin-right: 1rem;
+	padding: 0.3rem;
+}
+.selected {
+	margin-right: 1rem;
+	color: #ffff;
+	padding: 0.3rem;
+	text-decoration: none;
+	border-bottom: 2px solid #ffff;
+}
+.navItem,
+a {
+	color: #ffff;
+}
+.left {
+	flex: 1;
+	display: flex;
+}
+.right {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+.right > select {
+	border: none;
+	background: transparent;
+	color: white;
+	font-size: 16px;
+	border-bottom: 1px solid #ffff;
+}
+.right > span > .icon {
+	font-size: 20px;
+	margin-top: 0.2rem;
+}
+.left > span {
+	display: flex;
+	flex-direction: row;
+	margin-right: 15px;
+}
+.icon {
+	margin-right: 10px;
+}
+
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.main {
+		display: none;
+	}
+	.mobile {
+		display: block;
+		margin-bottom: 6.2rem;
+	}
+}

@@ -1,0 +1,40 @@
+.products {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 1rem;
+	margin-bottom: 2rem;
+	text-transform: capitalize;
+}
+
+.container {
+	flex: 1;
+	display: flex;
+	min-height: 50vh;
+	max-height: 50vh;
+}
+.container > img {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+	object-fit: cover;
+}
+.description {
+	flex: 1;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.description > ul {
+	list-style: outside;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+}

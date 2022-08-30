@@ -1,0 +1,33 @@
+.content {
+	height: fit-content;
+	display: flex;
+	width: 70%;
+	margin: 2rem auto;
+	min-height: 50vh;
+}
+.content > img {
+	flex: 1;
+	width: 50%;
+	object-fit: fill;
+	margin-right: 2rem;
+	border-radius: 3px;
+}
+.contetn > p {
+	margin-top: 2rem;
+}
+.desc {
+	flex: 1;
+}
+
+@media only screen and (max-width: 768px) {
+	.content {
+		flex-direction: column;
+		width: 99%;
+	}
+	.content > img {
+		width: 100%;
+	}
+	.desc {
+		padding: 10px;
+	}
+}

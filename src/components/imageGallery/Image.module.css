@@ -1,0 +1,35 @@
+.gallery {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
+}
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.top > .im {
+	max-width: 49.5%;
+	min-width: 49.5%;
+	object-fit: fill;
+	border-radius: 6px;
+	margin: 0.2rem;
+}
+.bottom {
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+}
+.bottom > .im {
+	overflow: hidden;
+	min-width: 33%;
+	max-width: 33%;
+	border-radius: 6px;
+	margin: 0.2rem;
+}
+.im {
+	object-fit: fill;
+	max-width: 100%;
+}

@@ -1,0 +1,63 @@
+.carousel {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+img {
+	max-height: 100vh;
+	object-fit: cover;
+}
+.carouselContainer {
+	position: relative;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.carouselContainer > h1 {
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffff;
+	font-weight: 700;
+	font-size: 10rem;
+	text-shadow: 3px 3px 3px rgba(17, 17, 17, 0.2);
+	/* animation: brand 10s ease-in-ut infinite; */
+	white-space: nowrap;
+	background: rgba(10, 10, 10, 0.5);
+}
+@keyframes brand {
+	0% {
+		opacity: 0;
+	}
+	15% {
+		opacity: 1;
+		margin-left: 0;
+	}
+	85% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.carouselContainer > h1 {
+		font-size: 2rem;
+	}
+	h3 p {
+		font-size: 0.1rem;
+	}
+}

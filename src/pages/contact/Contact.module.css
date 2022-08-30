@@ -1,0 +1,78 @@
+.contact {
+	height: 100%;
+	display: flex;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 5rem;
+}
+.cDetails {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.top {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	color: tomato;
+	margin-bottom: 1rem;
+}
+.icon {
+	margin-right: 0.6rem;
+}
+.cDetails > span {
+	padding: 5rem 2rem;
+	display: flex;
+	align-items: start;
+	word-wrap: wrap;
+}
+.map {
+	flex: 1;
+}
+.address {
+	width: 50%;
+	margin-bottom: 5rem;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto;
+}
+input {
+	margin-bottom: 0.6rem;
+}
+label {
+	margin-bottom: 0.6rem;
+}
+button {
+	border: none;
+	background-color: tomato;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 6px;
+	padding: 0.6rem 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.textarea {
+	min-height: 150px;
+	margin-bottom: 1rem;
+}
+button:hover {
+	background: rgb(249, 122, 99);
+}
+.error {
+	color: red;
+	font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+	.contact {
+		flex-direction: column;
+	}
+	.cDetails {
+		padding: 0;
+	}
+}
