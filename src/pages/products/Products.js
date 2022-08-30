@@ -1,22 +1,12 @@
 import cls from './Products.module.css'
 import pop1 from '../../assets/product/dd.jpeg'
 import pop2 from '../../assets/product/cd.jpeg'
-import { useState } from 'react'
-import Spinner from '../../components/spinner/Spinner'
 export default function Products() {
-  const [loading, setLoading] = useState(false)
   return (
     <div className={cls.products}>
 
       <div className={cls.container}>
-        {!loading && (
-          <img src="https://3.downloader.disk.yandex.com/preview/b65266d07cecba8beade0588b0aa907b4471138981be6b521c228682523010b2/inf/KZn15kpMTheuqmw7Urteg_373ZX4NIguH7EqX1J5M3LL2Mw5ZUgYW31ZnLEqX80_aaxfWhOWs5ni-5by06CNEQ%3D%3D?uid=1680697291&filename=dd.jpeg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1680697291&tknv=v2&size=1672x976"
-            alt="poplin fabric"
-            onLoadStart={() => setLoading(true)}
-            onLoad={() => setLoading(false)}
-          />
-        )}
-        {loading && <Spinner />}
+        <img src={pop1} alt="poplin fabric" />
         <div className={cls.description}>
           <h2>Product Details and Sizing</h2>
           <ul>
@@ -39,11 +29,7 @@ export default function Products() {
             <li>Wiltop-tex Air jet loom 9100</li>
           </ul>
         </div>
-        <img src='https://3.downloader.disk.yandex.com/preview/b65266d07cecba8beade0588b0aa907b4471138981be6b521c228682523010b2/inf/KZn15kpMTheuqmw7Urteg_373ZX4NIguH7EqX1J5M3LL2Mw5ZUgYW31ZnLEqX80_aaxfWhOWs5ni-5by06CNEQ%3D%3D?uid=1680697291&filename=dd.jpeg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1680697291&tknv=v2&size=1672x976'
-          alt="poplin fabric"
-          onLoadStart={() => setLoading(true)}
-          onLoad={() => setLoading(false)}
-        />
+        <img src={pop2} alt="poplin fabric" />
       </div>
     </div>
   )

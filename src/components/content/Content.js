@@ -1,7 +1,5 @@
 import cls from './Content.module.css'
-import Spinner from '../spinner/Spinner'
 export default function Content({ img }) {
-
   return (
     <div className={cls.content}>
       <img src={img} alt="" />
